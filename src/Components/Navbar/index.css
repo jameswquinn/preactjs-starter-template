@@ -1,0 +1,31 @@
+a {
+  fill:white;
+}
+
+.navigation svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  fill: inherit;
+}
+
+.navigation {
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 54px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  will-change: transform;
+  transition: transform 400ms;
+}
+
+/* Navbar Component */
+.navigation.is__pinned {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
